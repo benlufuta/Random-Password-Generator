@@ -1,0 +1,67 @@
+/* Resetting default padding and margin */
+body {
+  padding: 0;
+  margin: 10px;
+  /* Setting font-family for the entire body */
+  font-family: 'Courier New', Courier, monospace;
+  /* Ensuring box-sizing includes padding and border 
+    in the element's total width and height */
+  box-sizing: border-box;
+  /* Applying linear gradient background */
+  background: linear-gradient(135deg, lightblue, gray);
+}
+
+/* Common styling for the container and its children */
+.container {
+  position: fixed;
+  /* Centering the container horizontally and vertically */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 700px;
+  /* Setting text color */
+  color: darkblue;
+}
+
+/* Styling for the input box inside the container */
+.container #inputBox,
+button {
+  width: 60%;
+  max-width: 350px;
+  padding: 10px 20px;
+  font-size: 30px;
+  border-radius: 15px;
+  /* Removing border and outline */
+  outline: none;
+  border: none;
+}
+
+/* Specific styling for the input box */
+.container #inputBox {
+  margin-top: 50px;
+}
+
+/* Styling for the button */
+button {
+  margin: 30px;
+  padding-top: 5px;
+}
+
+/* Styling for the image inside the input area */
+.inputArea img {
+  max-width: 40px;
+  margin-top: 20px;
+  /* Adding cursor pointer to indicate it's clickable */
+  cursor: pointer;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background: lightgreen;
+  color: white;
+  /* Adding box-shadow for a slight elevation effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Changing cursor to pointer on hover */
+  cursor: pointer;
+}
